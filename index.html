@@ -230,9 +230,9 @@
 <body>
 
 <header id="main-header">
-  <h1 id="logo" title="Wardrobe">Wardrobe</h1>
+  <h1 id="logo" title="Wardrobe">Dress Me</h1>
   <div class="header-nav">
-    <button class="nav-btn active" onclick="showPage('wardrobe')">Wardrobe</button>
+    <button class="nav-btn active" onclick="showPage('wardrobe')">Closet</button>
     <button class="nav-btn" onclick="showPage('saved')">Saved Outfits</button>
   </div>
   <div class="header-right">
@@ -261,7 +261,7 @@
         <div class="tab active" data-cat="all">All</div>
         <div class="tab" data-cat="tops">Tops</div>
         <div class="tab" data-cat="bottoms">Bottoms</div>
-        <div class="tab" data-cat="shoes">Shoes</div>
+        <div class="tab" data-cat="shoes">Heels</div>
         <div class="tab" data-cat="accessories">Accessories</div>
         <div class="tab" data-cat="toys">Toys</div>
       </div>
@@ -273,11 +273,11 @@
         <div class="add-form">
           <input type="text" id="new-name" placeholder="Item name">
           <select id="new-cat">
-            <option value="tops">Top / T-Shirt</option>
-            <option value="bottoms">Trousers / Skirt</option>
-            <option value="shoes">Shoes</option>
-            <option value="accessories">Accessory</option>
-            <option value="toys">Toy</option>
+            <option value="tops">Top</option>
+            <option value="bottoms">Bottoms</option>
+            <option value="shoes">Heels</option>
+            <option value="accessories">Accessories</option>
+            <option value="toys">Toys</option>
           </select>
           <input type="text" id="new-color" placeholder="Colour / description" style="grid-column:1/-1">
           <div class="photo-pair" style="grid-column:1/-1">
@@ -294,7 +294,7 @@
               <input type="file" class="photo-slot-input" id="add-inp-1" accept="image/*">
             </div>
           </div>
-          <button class="add-btn" onclick="addItem()">+ Add to wardrobe</button>
+          <button class="add-btn" onclick="addItem()">+ Add to closet</button>
         </div>
       </div>
     </div>
@@ -335,7 +335,7 @@
     <div class="modal-title">Your<br>outfit</div>
     <div class="modal-outfit-grid" id="modal-grid"></div>
     <div class="modal-divider"></div>
-    <button class="modal-close" onclick="closeOverlay('reveal-modal')">Back to wardrobe</button>
+    <button class="modal-close" onclick="closeOverlay('reveal-modal')">Back to closet</button>
   </div>
 </div>
 
@@ -392,7 +392,7 @@
       <button class="sm-confirm" onclick="confirmEditItem()">Save changes</button>
       <button class="sm-cancel" onclick="closeOverlay('edit-modal')">Cancel</button>
     </div>
-    <button class="sm-danger" onclick="deleteItem()">Remove item from wardrobe</button>
+    <button class="sm-danger" onclick="deleteItem()">Remove item from closet</button>
   </div>
 </div>
 
@@ -418,7 +418,7 @@
 
 <script>
 // ===================== CONFIGURATION =====================
-const ADMIN_PASSWORD = 'wardrobe2024'; // <-- CHANGE THIS PASSWORD
+const ADMIN_PASSWORD = 'holaguapas'; // <-- CHANGE THIS PASSWORD
 const LOGO_TAPS_NEEDED = 5;
 // =========================================================
 
